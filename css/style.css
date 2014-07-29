@@ -1,0 +1,71 @@
+ body {
+     min-width: 520px;
+     padding: 10px;
+ }
+ .column {
+     width: 370px;
+     float: left;
+     padding-bottom: 100px;
+ }
+ .portlet {
+     margin: 0 1em 1em 0;
+     padding: 0.3em;
+     width: 350px;
+     float: left;
+ }
+ .portlet-header {
+     padding: 0.2em 0.3em;
+     margin-bottom: 0.5em;
+     position: relative;
+ }
+ .portlet-toggle {
+     position: absolute;
+     top: 50%;
+     right: 0;
+     margin-top: -8px;
+ }
+ .portlet-content {
+     padding: 0.4em;
+ }
+ .portlet-placeholder {
+     border: 1px dotted black;
+     margin: 0 1em 1em 0;
+     height: 50px;
+ }
+
+#addFeed{
+    margin-top: -40px;
+    float: right;
+}
+
+.newsEntry{
+    background: white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.newsEntry:nth-child(odd) {
+    background: #f4f5f7;
+}
+#header {
+    width: 99%;
+    color: #cdbfe3;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    background-color: #6f5499;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#563d7c),to(#6f5499));
+    background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+    background-image: -o-linear-gradient(top,#563d7c 0,#6f5499 100%);
+    background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+    background-repeat: repeat-x;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#list {
+    display: flex;
+}
