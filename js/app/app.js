@@ -128,8 +128,12 @@
          
      $("#addFeed").click(function(){
             bootbox.prompt("Enter NEWS feed/RSS URL", function(result) {                
-              if (result !== null) {          
-                    initializeFeed(result);                   
+              if (result !== null) {
+                    if(feeds.indexOf(result) === -1){
+                        initializeFeed(result);         
+                    }else{
+                        bootbox.alert("Feed already added.");
+                    }
               }
             });
      });
